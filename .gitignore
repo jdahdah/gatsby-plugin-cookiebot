@@ -1,0 +1,11 @@
+/*
+!src/
+!index.js
+!.vscode/
+!.npmignore
+!.nvmrc
+!package-lock.json
+!package.json
+!README.md
+!tsconfig.json
+!LICENSE

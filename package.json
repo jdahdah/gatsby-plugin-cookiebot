@@ -1,0 +1,33 @@
+{
+  "name": "gatsby-plugin-cookiebot",
+  "version": "1.0.3",
+  "description": "Gatsby plugin for Cookiebot CMP",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "develop": "tsc-watch --onSuccess \"npm run yalc:publish\"",
+    "yalc:publish": "yalc publish --push",
+    "npm:publish": "npm run build && npm publish",
+    "prepare": "echo 'Preparing'",
+    "prepublishOnly": "echo 'No tests to run'"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "cookiebot",
+    "google-tagmanager"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "gatsby": "^3.14.2",
+    "tsc-watch": "^4.5.0",
+    "typescript": "^4.5.0-beta"
+  },
+  "engines": {
+    "node": ">=14",
+    "npm": ">=7"
+  },
+  "dependencies": {
+    "react": "^17.0.2"
+  }
+}
