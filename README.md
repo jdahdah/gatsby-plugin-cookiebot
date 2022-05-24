@@ -30,12 +30,10 @@ plugins: [
       cookiebotId: "00000000-0000-0000-0000-000000000000",
       // Optional. Turns on Cookiebot's manual mode. Defaults to false.
       manualMode: true,
-      //  Optional. Skip blocking of GTM. Defaults to true if manualMode is set to true.
+      //  Optional. Block GTM, defaults to true if `manualMode` is set to true.
       blockGtm: false,
-      // Optional. Enables plugin in development. Will cause gatsby-plugin-google-tagmanager to thrown an error when pushing to dataLayer. Defaults to false.
+      // Optional. Enables plugin in development. Will cause gatsby-plugin-google-tagmanager to throw an error when pushing to dataLayer. Defaults to false.
       includeInDevelopment: true,
-      // Optional. Debug mode for plugin development. Defaults to false.
-      pluginDebug: true,
     },
   },
 ];
