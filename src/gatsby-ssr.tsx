@@ -37,7 +37,7 @@ export const onPreRenderHTML = (
       if (component.type === "script") {
         if (
           component.key === "plugin-google-tagmanager" &&
-          manualMode &&
+          // manualMode &&
           blockGtm
           // && isProduction // gatsby-plugin-google-tagmanager will throw an error if the script has not been loaded in development
         ) {
@@ -66,7 +66,7 @@ export const onPreRenderHTML = (
       if (component.type === "noscript") {
         if (
           component.key === "plugin-google-tagmanager" &&
-          manualMode &&
+          // manualMode &&
           blockGtm
           // && isProduction // gatsby-plugin-google-tagmanager will throw an error if the script has not been loaded in development
         ) {
