@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-cookiebot",
-  "version": "1.0.3",
+  "version": "1.1",
   "description": "Gatsby plugin for Cookiebot CMP",
   "main": "index.js",
   "scripts": {
@@ -19,15 +19,13 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "gatsby": "^3.14.2",
-    "tsc-watch": "^4.5.0",
-    "typescript": "^4.5.0-beta"
+    "gatsby": "^4.14.1",
+    "react": "^18.1.0",
+    "tsc-watch": "^5.0.3",
+    "typescript": "^4.6.4"
   },
   "engines": {
-    "node": ">=14",
-    "npm": ">=7"
-  },
-  "dependencies": {
-    "react": "^17.0.2"
+    "node": ">=16",
+    "npm": ">=8"
   }
 }
