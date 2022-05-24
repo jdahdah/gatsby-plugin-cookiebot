@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-cookiebot",
-  "version": "1.1",
+  "version": "1.0.4",
   "description": "Gatsby plugin for Cookiebot CMP",
   "main": "index.js",
   "scripts": {

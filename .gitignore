@@ -1,6 +1,9 @@
 /*
+!constants/
 !src/
 !index.js
+!gatsby-node.js
+!gatsby-ssr.js
 !.vscode/
 !.npmignore
 !.nvmrc
