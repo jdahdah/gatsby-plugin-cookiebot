@@ -38,8 +38,8 @@ export const onPreRenderHTML = (
         if (
           component.key === "plugin-google-tagmanager" &&
           manualMode &&
-          blockGtm &&
-          isProduction // gatsby-plugin-google-tagmanager will thrown an error if the script has not been loaded in development
+          blockGtm
+          // && isProduction // gatsby-plugin-google-tagmanager will throw an error if the script has not been loaded in development
         ) {
           // Add Cookiebot manual mode data attribute to GTM script
           return (
@@ -67,8 +67,8 @@ export const onPreRenderHTML = (
         if (
           component.key === "plugin-google-tagmanager" &&
           manualMode &&
-          blockGtm &&
-          isProduction // gatsby-plugin-google-tagmanager will thrown an error if the script has not been loaded in development
+          blockGtm
+          // && isProduction // gatsby-plugin-google-tagmanager will throw an error if the script has not been loaded in development
         ) {
           // Add Cookiebot manual mode data attribute to GTM noscript's iframe script
           const gtmIframeStr = component.props.dangerouslySetInnerHTML.__html;
