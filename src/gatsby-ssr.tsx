@@ -111,6 +111,7 @@ export const onRenderBody = (
       id="Cookiebot"
       src="https://consent.cookiebot.com/uc.js"
       data-cbid={cookiebotId}
+      data-blockingmode={manualMode ? undefined : "auto"}
       type="text/javascript"
       async={manualMode ? true : undefined} // Undefined removes the attribute completely. Async needs to be removed entirely for automode to block all scripts.
     ></script>,
