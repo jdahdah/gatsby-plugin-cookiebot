@@ -1,4 +1,5 @@
 import React from "react";
+import { Script } from "gatsby";
 import { INCLUDE_IN_DEVELOPMENT_DEFAULT, MANUAL_MODE_DEFAULT, } from "./constants/constants";
 const isProduction = process.env.NODE_ENV === "production";
 export const onPreRenderHTML = (args, pluginOptions) => {
@@ -17,7 +18,7 @@ export const onPreRenderHTML = (args, pluginOptions) => {
             // && isProduction // gatsby-plugin-google-tagmanager will throw an error if the script has not been loaded in development
             ) {
                 // Add Cookiebot manual mode data attribute to GTM script
-                return (React.createElement("script", Object.assign({ "data-cookieconsent": "statistics", type: "text/plain", key: component.key }, component.props)));
+                return (React.createElement(Script, Object.assign({ "data-cookieconsent": "statistics", type: "text/plain", key: component.key, strategy: "off-main-thread" }, component.props)));
             }
         }
         return component;

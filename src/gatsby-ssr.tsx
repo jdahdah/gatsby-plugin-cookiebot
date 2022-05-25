@@ -1,6 +1,6 @@
 import React from "react";
 
-import { PreRenderHTMLArgs, RenderBodyArgs } from "gatsby";
+import { PreRenderHTMLArgs, RenderBodyArgs, Script } from "gatsby";
 import { PluginOptions } from "./types/types";
 import {
   INCLUDE_IN_DEVELOPMENT_DEFAULT,
@@ -43,10 +43,11 @@ export const onPreRenderHTML = (
         ) {
           // Add Cookiebot manual mode data attribute to GTM script
           return (
-            <script
+            <Script
               data-cookieconsent="statistics"
               type="text/plain"
               key={component.key}
+              strategy="off-main-thread"
               {...component.props}
             />
           );
